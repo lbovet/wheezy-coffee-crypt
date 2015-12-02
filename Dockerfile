@@ -6,4 +6,4 @@ RUN apt-get update && \
     curl -sL -o /usr/local/bin/dlgrab https://github.com/aidanhs/dlgrab/releases/download/0.2/dlgrab-linux-x64 && \
     apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 ENV NODE_PATH=/usr/local/lib/node_modules
-RUN coffee
+CMD coffee
